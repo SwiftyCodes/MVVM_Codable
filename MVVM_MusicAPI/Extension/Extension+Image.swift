@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 extension UIImageView {
+    
     public func imageFromURL(urlString: String) {
         
         let activityIndicator = UIActivityIndicatorView(style: .gray)
