@@ -10,12 +10,22 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var tableView: MusicTableView!
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        Service.sharedInstance.getMusicData()
+        getData()
     }
-
-
+    
+    func getData() {
+        Service.sharedInstance.getMusicData { (music, error) in
+            if error != nil {
+                print(error!)
+            }else{
+                self.tableView.musicVMArray = music?.map({return MusicVM(music: $0) }) ?? []
+            }
+        }
+    }
 }
+
 

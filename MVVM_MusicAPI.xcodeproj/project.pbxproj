@@ -15,6 +15,10 @@
 		757BF23A231C743E00A4FB16 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757BF239231C743E00A4FB16 /* Service.swift */; };
 		757BF23D231C749000A4FB16 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757BF23C231C749000A4FB16 /* Constants.swift */; };
 		757BF23F231C767000A4FB16 /* MusicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757BF23E231C767000A4FB16 /* MusicModel.swift */; };
+		75FE1C45231D319D00B1FDFE /* MusicVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FE1C44231D319D00B1FDFE /* MusicVM.swift */; };
+		75FE1C47231D31B200B1FDFE /* MusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FE1C46231D31B200B1FDFE /* MusicTableViewCell.swift */; };
+		75FE1C4A231D417D00B1FDFE /* Extension+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FE1C49231D417D00B1FDFE /* Extension+Image.swift */; };
+		75FE1C4C231D451400B1FDFE /* MusicTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FE1C4B231D451400B1FDFE /* MusicTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		757BF239231C743E00A4FB16 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		757BF23C231C749000A4FB16 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		757BF23E231C767000A4FB16 /* MusicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicModel.swift; sourceTree = "<group>"; };
+		75FE1C44231D319D00B1FDFE /* MusicVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicVM.swift; sourceTree = "<group>"; };
+		75FE1C46231D31B200B1FDFE /* MusicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableViewCell.swift; sourceTree = "<group>"; };
+		75FE1C49231D417D00B1FDFE /* Extension+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Image.swift"; sourceTree = "<group>"; };
+		75FE1C4B231D451400B1FDFE /* MusicTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,14 +68,14 @@
 		757BF221231C6C4B00A4FB16 /* MVVM_MusicAPI */ = {
 			isa = PBXGroup;
 			children = (
+				75FE1C4D231D49AE00B1FDFE /* Resources */,
+				75FE1C48231D416E00B1FDFE /* Extension */,
 				757BF23B231C748600A4FB16 /* Constants */,
 				757BF236231C6C6800A4FB16 /* Model */,
 				757BF234231C6C5900A4FB16 /* ViewModel */,
 				757BF235231C6C6300A4FB16 /* View */,
 				757BF237231C70A000A4FB16 /* Controller */,
 				757BF238231C70A700A4FB16 /* Service */,
-				757BF222231C6C4B00A4FB16 /* AppDelegate.swift */,
-				757BF226231C6C4B00A4FB16 /* Main.storyboard */,
 				757BF229231C6C4E00A4FB16 /* Assets.xcassets */,
 				757BF22B231C6C4E00A4FB16 /* LaunchScreen.storyboard */,
 				757BF22E231C6C4E00A4FB16 /* Info.plist */,
@@ -78,6 +86,7 @@
 		757BF234231C6C5900A4FB16 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				75FE1C44231D319D00B1FDFE /* MusicVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -85,6 +94,8 @@
 		757BF235231C6C6300A4FB16 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				75FE1C46231D31B200B1FDFE /* MusicTableViewCell.swift */,
+				75FE1C4B231D451400B1FDFE /* MusicTableView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -119,6 +130,23 @@
 				757BF23C231C749000A4FB16 /* Constants.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		75FE1C48231D416E00B1FDFE /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				75FE1C49231D417D00B1FDFE /* Extension+Image.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		75FE1C4D231D49AE00B1FDFE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				757BF222231C6C4B00A4FB16 /* AppDelegate.swift */,
+				757BF226231C6C4B00A4FB16 /* Main.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,9 +222,13 @@
 			files = (
 				757BF225231C6C4B00A4FB16 /* ViewController.swift in Sources */,
 				757BF223231C6C4B00A4FB16 /* AppDelegate.swift in Sources */,
+				75FE1C45231D319D00B1FDFE /* MusicVM.swift in Sources */,
+				75FE1C4A231D417D00B1FDFE /* Extension+Image.swift in Sources */,
 				757BF23A231C743E00A4FB16 /* Service.swift in Sources */,
+				75FE1C47231D31B200B1FDFE /* MusicTableViewCell.swift in Sources */,
 				757BF23F231C767000A4FB16 /* MusicModel.swift in Sources */,
 				757BF23D231C749000A4FB16 /* Constants.swift in Sources */,
+				75FE1C4C231D451400B1FDFE /* MusicTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,7 +381,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.AppAttack.MVVM-MusicAPI";
+				PRODUCT_BUNDLE_IDENTIFIER = com.AppAttack.Autolayout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -367,7 +399,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.AppAttack.MVVM-MusicAPI";
+				PRODUCT_BUNDLE_IDENTIFIER = com.AppAttack.Autolayout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
